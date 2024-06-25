@@ -29,7 +29,6 @@
     "!**/.*"
   ],
   "scripts": {
-    "build": "babel src/ -d lib/",
     "test": "yarn test:package ; yarn test:example ; yarn test:plugin",
     "test:package": "jest --config jest.config.js --passWithNoTests",
     "test:example": "jest --config example/jest.config.js",
