@@ -49,7 +49,7 @@
     "clean:plugin": "expo-module clean plugin",
     "test:plugin": "jest --config plugin/jest.config.js",
     "lint:plugin": "eslint plugin/src/*",
-    "build": "tsc",
+    "build": "babel src/ -d lib/",
     "prepare": "npm run build"
   },
   "keywords": [
