@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.authors      = package["author"]
 
   s.platforms    = { :ios => "11.0" }
-  s.source       = { :git => "https://github.com/dotintent/react-native-ble-plx.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/will4skill/react-native-ble-plx.git", :tag => "#{s.version}" }
 
   s.source_files = "ios/**/*.{h,m,mm}"
   s.dependency "MultiplatformBleAdapter", "0.2.0"
