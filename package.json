@@ -63,7 +63,7 @@
     "Energy",
     "BLE"
   ],
-  "repository": "https://github.com/dotintent/react-native-ble-plx.git",
+  "repository": "https://github.com/will4skill/react-native-ble-plx.git",
   "author": "dotintent (https://withintent.com/)",
   "license": "MIT",
   "bugs": {
