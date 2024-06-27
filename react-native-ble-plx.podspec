@@ -15,11 +15,11 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/will4skill/react-native-ble-plx.git", :tag => "#{s.version}" }
 
   s.source_files = "ios/**/*.{h,m,mm}"
-  s.dependency "MultiplatformBleAdapter"
+  s.dependency "MultiplatformBleAdapter", "0.2.0"
   s.compiler_flags = "-DMULTIPLATFORM_BLE_ADAPTER -fmodules -fcxx-modules"
 
   s.subspec 'MultiplatformBleAdapter' do |ss|
-    ss.source_files = 'ios/MultiplatformBleAdapter/**/*.{swift}'
+    ss.source_files = 'MultiplatformBleAdapter/iOS/**/*.{swift}'
   end
 
   # Use install_modules_dependencies helper to install the dependencies if React Native version >=0.71.0.
