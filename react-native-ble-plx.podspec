@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/will4skill/react-native-ble-plx.git", :tag => "#{s.version}" }
 
   s.source_files = "ios/**/*.{h,m,mm}"
-  s.dependency "MultiplatformBleAdapter", "0.2.0"
+  s.dependency "MultiplatformBleAdapter"
   s.compiler_flags = "-DMULTIPLATFORM_BLE_ADAPTER -fmodules -fcxx-modules"
 
   s.subspec 'MultiplatformBleAdapter' do |ss|
