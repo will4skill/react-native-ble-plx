@@ -29,6 +29,7 @@
     "!**/.*"
   ],
   "scripts": {
+    "build": "babel src/ -d lib/",
     "test": "yarn test:package ; yarn test:example ; yarn test:plugin",
     "test:package": "jest --config jest.config.js --passWithNoTests",
     "test:example": "jest --config example/jest.config.js",
@@ -48,9 +49,8 @@
     "build:plugin": "tsc --build plugin",
     "clean:plugin": "expo-module clean plugin",
     "test:plugin": "jest --config plugin/jest.config.js",
-    "lint:plugin": "eslint plugin/src/*",
-    "build": "babel src/ -d lib/",
-    "prepare": "npm run build"
+    "prepare": "npm run build && npm run clean:plugin && npm run build:plugin",
+    "lint:plugin": "eslint plugin/src/*"
   },
   "keywords": [
     "react-native",
